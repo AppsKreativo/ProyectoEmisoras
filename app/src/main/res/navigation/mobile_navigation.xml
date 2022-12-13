@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="com.example.proyectoemisoras.InicioFragment"
+        android:label="@string/menu_inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_nav_inicio_to_nav_emisora"
+            app:destination="@id/nav_emisora" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_emisora"
+        android:name="com.example.proyectoemisoras.EmisoraFragment"
+        android:label="@string/menu_emisora"
+        tools:layout="@layout/fragment_emisora" />
+    <fragment
+        android:id="@+id/nav_dormir"
+        android:name="com.example.proyectoemisoras.DormirFragment"
+        android:label="@string/menu_dormir"
+        tools:layout="@layout/fragment_dormir" />
+    <fragment
+        android:id="@+id/nav_info"
+        android:name="com.example.proyectoemisoras.InfoFragment"
+        android:label="@string/menu_info"
+        tools:layout="@layout/fragment_info" />
+</navigation>
